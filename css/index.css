@@ -1,0 +1,61 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3C6BE2;
+    border-bottom: #000 10px solid;
+    padding: 10px 20px;
+}
+
+a {
+    display:inline-flex;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Fira Code", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-right: 30px;
+    transition: all 0.5s ease-out;
+}
+
+a::before{
+    content: "";
+    background-color: #000;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+a:focus, a:hover{
+    font-weight: bold;
+    color: #000;
+    transform: scale(1.06);
+}
+/* aplicando uma mudança no quadradinho */
+a:focus::before, a:hover::before{
+    background-color: #62C370;
+    transform: scale(1.06);
+}
+
+nav {
+    text-align: right;
+}
+
+#button {
+    display: inline-block;
+    background-color:#1144C7;
+    height: 60px;
+    padding-left: 19px;
+    padding-right: 19px;
+    line-height: 60px;
+    box-shadow: 5px 5px 0 #000;
+    margin-right: 0px;
+    transition: all 0.5s ease-out;
+}
+
+#button:hover{
+    font-weight: bold;
+    background-color: #62C370;
+    color: #000;
+    transform: scale(1.06);
+}
